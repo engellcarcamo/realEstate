@@ -3,7 +3,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; /*1rem = 10px de 16px*/
 }
-*, *:before, *:after{
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -53,8 +55,8 @@ h4 {
   max-width: 800px;
 }
 /** Botones **/
-.boton{
-  color:white;
+.boton {
+  color: white;
   font-weight: 700;
   text-decoration: none;
   font-size: 1.8rem;
@@ -62,11 +64,11 @@ h4 {
   padding: 1rem 3rem;
   display: inline-block;
 }
-.boton-naranja{
- background-color: #E08709;
+.boton-naranja {
+  background-color: #e08709;
 }
-.boton-verde{
-  background-color: #71B100;
+.boton-verde {
+  background-color: #71b100;
 }
 
 /* HEADER */
@@ -106,7 +108,7 @@ h4 {
 }
 
 .nav a:hover {
-  color: #71B100;
+  color: #71b100;
 }
 .nav a:last-of-type {
   margin: 0;
@@ -136,24 +138,25 @@ h4 {
   background-color: #f5f5f5;
 }
 
-.contenido-anuncio{
+.contenido-anuncio {
   padding: 2rem;
 }
-.contenido-anuncio h3, p{
+.contenido-anuncio h3,
+p {
   margin: 0;
 }
-.precio{
-  color:#71B100;
+.precio {
+  color: #71b100;
   font-weight: 700;
 }
 
-.iconos-caracteristicas{
+.iconos-caracteristicas {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  padding:0;
+  padding: 0;
 }
-.iconos-caracteristicas li{
+.iconos-caracteristicas li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +165,23 @@ h4 {
   margin-inline-end: 2rem;
 }
 
-.ver-todas{
- display: flex;
- justify-content: flex-end;
+.ver-todas {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/** Seccion contacto home**/
+.imagen-contacto {
+  background: url(../img/encuentra.jpg) no-repeat center center;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+}
+.contenido-contacto {
+  color: white;
+  flex: 1;
+}
+.contenido-contacto p {
+  font-size: 1.8rem;
 }
