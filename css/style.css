@@ -18,6 +18,9 @@ body {
 img {
   max-width: 100%;
 }
+a{
+  text-decoration: none;
+}
 
 .container {
   max-width: 120rem;
@@ -67,8 +70,17 @@ h4 {
 .boton-naranja {
   background-color: #e08709;
 }
+.boton-naranja:hover {
+  background-color:#b5b5b5;
+  color: black;
+}
 .boton-verde {
   background-color: #71b100;
+}
+.boton-verde:hover {
+  color: #71b100;
+  background-color:#ffffff;
+  border: 1px solid #b5b5b5;
 }
 
 /* HEADER */
@@ -102,7 +114,6 @@ h4 {
 /*Navigation*/
 .nav a {
   color: #ffffff;
-  text-decoration: none;
   font-size: 1.8rem;
   margin-inline-end: 2rem;
 }
@@ -184,4 +195,79 @@ p {
 }
 .contenido-contacto p {
   font-size: 1.8rem;
+}
+
+/*Seccion inferior 'Blog' */
+.seccion-inferior {
+  display: flex;
+  justify-content: space-between;
+}
+.blog {
+  flex-basis: 60%;
+}
+.testimoniales {
+  flex-basis: calc(40% - 3rem);
+}
+
+.blogEntrada {
+  display: flex;
+  justify-content: space-between;
+}
+.blogEntrada:first-of-type{
+  margin-bottom: 2rem;
+}
+.blogEntrada-imagen {
+  flex-basis: 40%;
+}
+.blogEntrada img{
+  border-radius: 2rem;
+}
+.blogEntrada-texto {
+  flex-basis: calc(60% - 3rem);
+}
+.blogEntrada-texto h4, a {
+  color:black;
+  margin: 0;
+  line-height: 1;
+}
+
+.blogEntrada-texto h4::after{
+  content: '';
+  margin-block-start: 0.5rem;
+  display: block;
+  width: 15rem;
+  height: 0.5rem;
+  background-color: #71b100;
+}
+.blogEntrada-texto span{
+  color:#e08709;
+}
+
+/*Seccion inferior Testimoniales*/
+
+.testimonial{
+  background-color: #71b100;
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: #ffffff;
+  border-radius: 8%;
+}
+.testimonial p::before{
+  content: '- ';
+}
+.testimonial p{
+  text-align: right;
+}
+.testimonial blockquote::before{
+  content: '';
+  background-image: url(../img/comilla.svg);
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: -2rem;
+}
+.testimonial blockquote{
+  position: relative;
+  padding-inline-start: 4rem;
+  font-weight: 300;
 }
